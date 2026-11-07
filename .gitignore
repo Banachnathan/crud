@@ -1,0 +1,35 @@
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Dependencies
+/vendor/
+/node_modules/
+
+# Logs
+*.log
+logs/
+
+# Operating system
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/*
+!.vscode/extensions.json
+
+# Temporary files
+*.tmp
+*.swp
+
+# Database backups and local data
+*.sql.bak
+*.dump
+*.sqlite
+*.db
+
+# Docker volumes (if stored locally)
+mysql_data/
