@@ -1,10 +1,10 @@
 USE UsersCrudDB;
 
-CREATE TABLE usuarios(
-  id INT AUTO_INCREMENT PRIMARY KEY,
-    nome VARCHAR(100) NOT NULL,
-    email VARCHAR(150) NOT NULL UNIQUE,
-    senha VARCHAR(255) NOT NULL,
-    data_criacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-)
-
+CREATE TABLE chamados(
+  id_chamado INT AUTO_INCREMENT PRIMARY KEY,
+  nome_cliente VARCHAR(100) NOT NULL,
+  titulo_chamado VARCHAR(200) NOT NULL,
+  categoria_chamado VARCHAR(100) NOT NULL,
+  prioridade_chamado VARCHAR(100) NOT NULL,
+  descricao_chamado VARCHAR(2000) NOT NULL
+);
